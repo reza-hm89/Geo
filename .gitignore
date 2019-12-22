@@ -3,3 +3,19 @@
 ################################################################################
 
 /.vs
+/Core/bin/Debug/netcoreapp3.1
+/Core/obj
+/DAL/bin/Debug/netcoreapp3.1
+/DAL/obj
+/DataContract/bin/Debug/netcoreapp3.1
+/DataContract/obj
+/Model/bin/Debug/netcoreapp3.1
+/Model/obj
+/Presentation/bin/Debug/netcoreapp3.1
+/Presentation/obj
+/ServiceContract/bin/Debug/netcoreapp3.1
+/ServiceContract/obj
+/Services/bin/Debug/netcoreapp3.1
+/Services/obj
+/WebFramework/bin/Debug/netcoreapp3.1
+/WebFramework/obj
