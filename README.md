@@ -19,6 +19,8 @@ Used JWT and .Net core for Authentication and authorization.
 
 Used NetTopologySuite package to calcualte distance between two geographical points.
 
+Also used Swagger to generate Api Doc for project
+
 I hope to enjoy it.
 
 Good luck.
