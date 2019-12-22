@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "56407d9d-fc45-4ed0-b60a-a2f5e780c4f9",
+		"name": "Opeqe",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:2264/api/user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"reza.hosseini.m@gmail.com\",\n\t\"password\":\"Rhm@123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2264/api/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2264",
+					"path": [
+						"api",
+						"user"
+					]
+				},
+				"description": "Get user List"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:2264/api/auth",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"reza.hosseini.m@gmail.com\",\n\t\"password\":\"Rhm@123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2264/api/auth",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2264",
+					"path": [
+						"api",
+						"auth"
+					]
+				},
+				"description": "Login"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:2264/api/Distance",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyZXphLmhvc3NlaW5pLm1AZ21haWwuY29tIiwianRpIjoiYjk5OWJhNDctYmRmYi00Y2UzLThkY2QtYWJkZjQwZjhiZGY2IiwiaWF0IjoxNTc3MDI3MDM1LCJyb2wiOiJhcGlfYWNjZXNzIiwiaWQiOiJmZDA2YTg1YS1hMzVkLTRmZTctYWM2NC0zMDlhNTVjOTU2YjAiLCJuYmYiOjE1NzcwMjcwMzUsImV4cCI6MTU3NzExMzQzNX0.fI8qtrpTbjXQ1KTx7907gN41Nhm4NcDpTLy6AZ9R2kw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"SourceX\":3,\n\t\"SourceY\":4,\n\t\"DestinationX\":6,\n\t\"DestinationY\":6\n\t\t\t\t\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2264/api/Distance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2264",
+					"path": [
+						"api",
+						"Distance"
+					]
+				},
+				"description": "Calculate and save distance"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:2264/api/Distance",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyZXphLmhvc3NlaW5pLm1AZ21haWwuY29tIiwianRpIjoiYjk5OWJhNDctYmRmYi00Y2UzLThkY2QtYWJkZjQwZjhiZGY2IiwiaWF0IjoxNTc3MDI3MDM1LCJyb2wiOiJhcGlfYWNjZXNzIiwiaWQiOiJmZDA2YTg1YS1hMzVkLTRmZTctYWM2NC0zMDlhNTVjOTU2YjAiLCJuYmYiOjE1NzcwMjcwMzUsImV4cCI6MTU3NzExMzQzNX0.fI8qtrpTbjXQ1KTx7907gN41Nhm4NcDpTLy6AZ9R2kw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:2264/api/Distance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2264",
+					"path": [
+						"api",
+						"Distance"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
